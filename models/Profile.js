@@ -1,9 +1,9 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const ProfileSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "user"
+    ref: 'user'
   },
   company: {
     type: String
@@ -57,7 +57,6 @@ const ProfileSchema = new mongoose.Schema({
       }
     }
   ],
-
   education: [
     {
       school: {
@@ -88,7 +87,6 @@ const ProfileSchema = new mongoose.Schema({
       }
     }
   ],
-
   social: {
     youtube: {
       type: String
@@ -112,4 +110,4 @@ const ProfileSchema = new mongoose.Schema({
   }
 });
 
-module.exports = Profile = mongoose.model("profile", ProfileSchema);
+module.exports = Profile = mongoose.model('profile', ProfileSchema);
