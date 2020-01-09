@@ -9,6 +9,7 @@ const Education = ({ education, deleteEducation }) => {
     <tr key={edu._id}>
       <td>{edu.school}</td>
       <td className="hide-sm">{edu.degree}</td>
+      <td className="hide-sm">{edu.fieldofstudy}</td>
       <td>
         <Mement format="YYYY/MM/DD">{edu.from}</Mement> -{" "}
         {edu.to === null ? (
@@ -34,7 +35,8 @@ const Education = ({ education, deleteEducation }) => {
         <thead>
           <tr>
             <th>School</th>
-            <th className="hide-sm">Field of Study</th>
+            <th className="hide-sm">Degree</th>
+            <th className="hide-sm">Field Of Study</th>
             <th className="hide-sm">Years</th>
           </tr>
         </thead>
